@@ -4,7 +4,6 @@
 
 Barim is an IntelliJ plugin that helps you manage personal to-dos and ideas for your coding projects directly inside the IDE. All your data is securely stored as GitHub Issues in a dedicated `barim-data` repository under your own GitHub account.
 
-You can also manage your tasks and notes on the go with the **[official web application](https://barim-app.vercel.app/)**.
 ***
 
 ## Key Features
