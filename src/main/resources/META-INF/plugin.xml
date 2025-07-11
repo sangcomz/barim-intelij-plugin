@@ -1,0 +1,56 @@
+<idea-plugin>
+    <id>io.github.sangcomz.Barim</id>
+
+    <name>Barim</name>
+
+    <vendor>Seokwon Jeong</vendor>
+
+    <description><![CDATA[
+    <p>Manage your personal to-dos and ideas for coding projects using GitHub Issues, directly within your IDE.</p>
+    <p>All data is stored in a separate, personal repository (<code>barim-data</code>) on your GitHub account, keeping it neatly separate from your project's official issue tracker.</p>
+    <br/>
+    <strong>Key Features:</strong>
+    <ul>
+      <li><strong>GitHub-Powered:</strong> Your GitHub account becomes your personal database.</li>
+      <li><strong>Project-Specific:</strong> Automatically filters tasks and notes based on your currently open project.</li>
+      <li><strong>IDE-Integrated:</strong> Handle all your tasks without leaving your coding workflow.</li>
+      <li><strong>Organized:</strong> Systematically manage items with Kanban-style statuses and tags.</li>
+    </ul>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.github</depends>
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="Barim"
+                anchor="right"
+                icon="/icons/pluginIcon.svg"
+                factoryClass="io.github.sangcomz.barim.IssueToolWindowFactory"/>
+    </extensions>
+
+    <actions>
+        <action id="barim.OpenToolWindow"
+                class="io.github.sangcomz.barim.action.OpenBarimToolWindowAction"
+                text="Open Barim Panel"
+                description="Opens the Barim tool window.">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift B"/>
+        </action>
+
+        <action id="barim.AddTask"
+                class="io.github.sangcomz.barim.action.AddTaskAction"
+                text="Barim: Add Task"
+                description="Adds a new task in the Barim panel.">
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift T"/>
+        </action>
+
+        <action id="barim.AddNote"
+                class="io.github.sangcomz.barim.action.AddNoteAction"
+                text="Barim: Add Note"
+                description="Adds a new note in the Barim panel.">
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt shift N"/>
+        </action>
+    </actions>
+</idea-plugin>

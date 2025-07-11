@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+    <path
+            fill="#AFB1B3"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="
+      M3,2
+      H7
+      C9,2 10,3 10,4.3
+      C10,5.2 9.5,5.8 8.7,6
+      C9.6,6.3 10.2,7.1 10.2,8.2
+      C10.2,9.8 9,11 7,11
+      H3
+      Z
+
+      M4.5,3.5
+      V5.5
+      H6.7
+      C7.5,5.5 8,5 8,4.5
+      C8,4 7.5,3.5 6.7,3.5
+      H4.5
+      Z
+
+      M4.5,7.0
+      V9.5
+      H7
+      C7.8,9.5 8.2,9 8.2,8.3
+      C8.2,7.6 7.8,7.0 7,7.0
+      H4.5
+      Z
+    "
+    />
+</svg>

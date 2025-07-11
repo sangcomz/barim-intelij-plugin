@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 24 24"
+     xmlns="http://www.w3.org/2000/svg" stroke="url(#barimGradient)" stroke-width="2" stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- 그라데이션 정의 -->
+    <defs>
+        <linearGradient id="barimGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#2D6AFF; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#A435F0; stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- 채우기와 테두기 모두 그라데이션 -->
+    <path d="M7,3 Q16,3 16,8 Q16,10 12,10 Q17,10 17,15 Q17,20 7,20 L7,3 Z"
+          fill="none" stroke="url(#barimGradient)"/>
+</svg>
